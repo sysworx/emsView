@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 16px;
+    /* Größere Schrift für bessere Lesbarkeit */
+}
+
+.container {
+    width: 90%;
+    /* Breite des Containers auf kleinen Bildschirmen */
+    max-width: 1200px;
+    /* Maximalbreite für größere Bildschirme */
+    margin: 10px auto;
+    /* Reduzierter äußerer Abstand */
+    padding: 15px;
+    /* Reduziertes Innenpadding */
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.stream-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    /* Reduziertes Padding für Stream-Items */
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #383838;
+    border: 1px solid #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stream-item img {
+    width: 100px;
+    /* Feste Breite */
+    height: 150px;
+    /* Höhe für Posterformat */
+    object-fit: cover;
+    /* Stellt sicher, dass das Bild richtig skaliert */
+    border-radius: 8px;
+    /* Leicht abgerundete Ecken für Poster-ähnliche Darstellung */
+    margin-bottom: 20px;
+    /* Erhöhen Sie den Abstand, falls nötig */
+}
+
+.progress-bar {
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    height: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #00b0ff;
+    height: 100%;
+    border-radius: 4px;
+    width: 0%;
+    /* Initialwert; dieser Wert sollte durch JavaScript dynamisch aktualisiert werden */
+}
+
+.stream-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.label {
+    min-width: 150px;
+    /* Stellen Sie den gewünschten Abstand ein */
+    display: inline-block;
+}
+
+.value {
+    display: inline-block;
+}
+
+.no-streams {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.header,
+.footer {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    /* Für den Footer */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header h1 {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        /* Anpassung der Breite für größere Bildschirme */
+        padding: 20px;
+        /* Erhöhtes Padding */
+    }
+
+    .stream-item {
+        flex-direction: row;
+        align-items: start;
+        padding: 15px;
+        /* Standard Padding für Stream-Items */
+    }
+
+    .stream-item img {
+        width: 100px;
+        /* Feste Breite */
+        height: 150px;
+        /* Höhe für Posterformat */
+        object-fit: cover;
+        /* Stellt sicher, dass das Bild richtig skaliert */
+        border-radius: 8px;
+        /* Leicht abgerundete Ecken für Poster-ähnliche Darstellung */
+        margin-bottom: 15px;
+    }
+
+    .stream-info {
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+        /* Kleinere Schriftgröße für sehr kleine Bildschirme */
+    }
+}
