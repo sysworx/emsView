@@ -1,7 +1,7 @@
 # emsView - Streaming Monitor for Emby Server
 
 ## Overview
-`emsView` is an  simple web application designed to monitor active streaming sessions on an Emby Media Server in real-time. As a Progressive Web App (PWA), it offers a user-friendly interface to display all ongoing streams, including detailed information like user data, played content, quality, and more.
+`emsView` is an  simple web application designed to monitor active streaming sessions on an Emby Media Server in real-time. As a Web App, it offers a user-friendly interface to display all ongoing streams, including detailed information like user data, played content, quality, and more.
 
 ## Key Features
 - **Real-Time Streaming Monitoring**: Keep track of all active streams on your Emby Server as they happen.
